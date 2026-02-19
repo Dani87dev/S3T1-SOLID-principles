@@ -9,19 +9,16 @@ public class UserRegister {
         this.user = user;
     }
 
-    /*
-        System.out.println("📧 Sending confirmation email to: " + user.getEmail());
 
-
-        }
-        */
-    //Registro
     public void register() {
 
         UserValidator validator1 = new UserValidator();
+        UserConfirmation confirmation1 = new UserConfirmation();
+
         validator1.validate(user);
+        confirmation1.confirmUser(user);
 
-
+        
     }
 }
-}
+
