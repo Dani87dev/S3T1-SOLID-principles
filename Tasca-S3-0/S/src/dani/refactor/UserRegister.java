@@ -3,20 +3,20 @@ package dani.refactor;
 public class UserRegister {
 
     private User user;
+    private UserValidator validator;
+    private UserConfirmation confirmatior;
 
 
-    public UserRegister(User user) {
+    public UserRegister(User user, UserValidator validation, UserConfirmation confirmatior) {
         this.user = user;
+        this.validator = validation;
+        this.confirmatior = confirmatior;
     }
-
 
     public void register() {
 
-        UserValidator validator1 = new UserValidator();
-        UserConfirmation confirmation1 = new UserConfirmation();
-
-        validator1.validateUser(user);
-        confirmation1.confirmUser(user);
+        validator.validateUser(user);
+        confirmatior.confirmUser(user);
 
 
     }
