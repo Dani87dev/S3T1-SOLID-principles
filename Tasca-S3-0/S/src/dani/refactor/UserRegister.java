@@ -15,10 +15,10 @@ public class UserRegister {
         UserValidator validator1 = new UserValidator();
         UserConfirmation confirmation1 = new UserConfirmation();
 
-        validator1.validate(user);
+        validator1.validateUser(user);
         confirmation1.confirmUser(user);
 
-        
+
     }
 }
 

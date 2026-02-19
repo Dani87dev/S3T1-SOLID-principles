@@ -3,7 +3,7 @@ package dani.refactor;
 public class UserValidator {
 
 
-    public void validate(User user) {
+    public void validateUser(User user) {
 
         if (user.getEmail() == null || !user.getEmail().contains("@") || !user.getEmail().contains(".")) {
             throw new IllegalArgumentException("Invalid email address.");
