@@ -11,6 +11,8 @@ public class Main {
         dani.tuneInstrument();
         dani.playInstrument();
 
+
+        //TEST OBLGATORI
     }
 
 }
